@@ -1,7 +1,8 @@
 <div class="main posts-index">
   <div class="container">
-    <% @posts.each do |post| %>
-      <div class="posts-index-item">
+    <%= link_to("新規投稿", new_post_path) %>
+      <% @posts.each do |post| %>
+        <div class="posts-index-item">
         <%= link_to(post.content, post_path(post.id)) %>
       </div>
     <% end %>

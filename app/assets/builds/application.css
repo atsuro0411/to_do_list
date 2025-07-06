@@ -1,5 +1,20 @@
 .form-heading {
-  color: red;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.form-body {
+  text-align: center;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+}
+
+.form-field {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=application.css.map */

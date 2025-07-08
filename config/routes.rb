@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   resources :posts do
     collection do
-      get :completed_index  
+      get :completed_index
     end
     member do
       patch :mark_completed
@@ -26,5 +26,4 @@ Rails.application.routes.draw do
       patch :remove_mark_completed
     end
 end
-  
 end

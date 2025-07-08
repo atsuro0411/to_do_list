@@ -53,5 +53,4 @@ class PostsController < ApplicationController
     @post.update(completed: false)
     redirect_to posts_path
   end
-
 end

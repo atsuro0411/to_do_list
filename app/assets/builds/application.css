@@ -8,13 +8,29 @@
   text-align: center;
 }
 
-textarea {
+.form-area {
   width: 400px;
   height: 100px;
 }
 
-.form-field {
+.form-submit {
+  width: 400px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.posts-index-item {
+  text-align: center;
+  border: solid 1px;
+  width: 400px;
+  margin: 0 auto;
   margin-bottom: 20px;
+  padding: 10px 10px;
 }
 
 /*# sourceMappingURL=application.css.map */

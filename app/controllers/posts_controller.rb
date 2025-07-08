@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
    def index
-    @posts = Post.all
+    @posts = Post.where(completed: false)
   end
 
   def new
@@ -36,5 +36,21 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:content, :id)
+  end
+
+  def completed_index
+    @posts = Post.where(completed: true)
+  end
+
+  def mark_completed
+    @post = Post.find(params[:id])
+    @post.update(completed: true)
+    redirect_to posts_path
+  end
+
+  def remove_mark_completed
+    @post = Post.find(params[:id])
+    @post.update(completed: false)
+    redirect_to posts_path
   end
 end

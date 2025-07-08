@@ -15,5 +15,15 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  resources :posts
+  resources :posts do
+    collection do
+      get :completed_index
+    end
+    member do
+      patch :mark_completed
+    end
+    member do
+      patch :remove_mark_completed
+    end
+end
 end

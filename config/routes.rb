@@ -20,10 +20,7 @@ Rails.application.routes.draw do
       get :completed_index
     end
     member do
-      patch :mark_completed
-    end
-    member do
-      patch :remove_mark_completed
+      patch :mark
     end
 end
 end

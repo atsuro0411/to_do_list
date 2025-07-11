@@ -35,8 +35,7 @@ h2 {
   margin-bottom: 20px;
   gap: 20px;
 }
-
-.post-content {
+.posts-index-item .post-content {
   width: 400px;
   padding: 5px;
   text-align: center;
@@ -44,12 +43,17 @@ h2 {
 }
 
 .completed-posts-index-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.completed-posts-index-item .completed-post-conetent {
+  width: 400px;
+  padding: 5px;
   text-align: center;
   border: solid 1px;
-  width: 400px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 10px 10px;
 }
 
 /*# sourceMappingURL=application.css.map */

@@ -1,19 +1,15 @@
-<div class="main posts-index">
-  <div class="container">
-    <h2> タスク一覧</h2>
-    <%= link_to "新規投稿", new_post_path ,class: "new_link" %>
-    <%= link_to "実行済み一覧", completed_index_posts_path %>
-      <% @posts.each do |post| %>
-        <div class="posts-index-item">
-          <div class="post-content">
-            <%= link_to(post.content, post_path(post.id)) %>
-          </div>
-          <div class="post-action">
-            <% unless post.completed %>
-              <%= button_to "実行済み", mark_completed_post_path(post), method: :patch %>
-            <% end %> 
-          </div>
+<h2> タスク一覧</h2>
+  <%= link_to "新規投稿", new_post_path ,class: "new_link" %>
+  <%= link_to "実行済み一覧", completed_index_posts_path %>
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <div class="post-content">
+          <%= link_to(post.content, post_path(post.id)) %>
         </div>
-      <% end %>
-  </div>
-</div>
+          <% unless post.is_completed %>
+            <%= button_to "実行済み", mark_post_path(post, is_completed: "true"), method: :patch %>
+          <% end %> 
+        </div>
+      </div>
+    <% end %>
+  

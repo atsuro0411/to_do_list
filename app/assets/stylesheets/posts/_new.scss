@@ -10,8 +10,17 @@
   width:400px;
   height:100px;
 }
-.form-submit {
-  width: 400px;
-  margin: 0 auto;
-  text-align: right;
+
+.form-box{
+  display:flex;
+  width:400px;
+  margin:0 auto;
+  .form-submit {
+  width:203px;
+  text-align:right;
+  }
+  .form-date{
+  width:203px;
+  text-align: left;
+  }
 }

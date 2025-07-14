@@ -6,6 +6,8 @@
         <div class="post-content">
           <%= link_to(post.content, post_path(post.id)) %>
         </div>
+          締切期限 <%= post.due_date.strftime("%Y/%m/%d %H:%M") %>
+          
           <% unless post.is_completed %>
             <%= button_to "実行済み", mark_post_path(post, is_completed: "true"), method: :patch %>
           <% end %> 

@@ -47,4 +47,8 @@ class PostsController < ApplicationController
   post.update(is_completed: params[:is_completed] == "true")
   redirect_to posts_path
 end
+
+def post_params
+  params.require(:post).permit(:content, :due_date)
+end
 end

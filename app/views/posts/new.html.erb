@@ -6,5 +6,8 @@
   <div class="form-submit">
     <%= form.submit "投稿" %>
   </div>
+  <div class = "form-date">
+    <%= form.date_field :due_date, type: "datetime-local" %>
+  </div>
 <% end %>
 

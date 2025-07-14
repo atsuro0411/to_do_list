@@ -13,10 +13,18 @@
   height: 100px;
 }
 
-.form-submit {
+.form-box {
+  display: flex;
   width: 400px;
   margin: 0 auto;
+}
+.form-box .form-submit {
+  width: 203px;
   text-align: right;
+}
+.form-box .form-date {
+  width: 203px;
+  text-align: left;
 }
 
 h2 {

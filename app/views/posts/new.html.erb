@@ -3,11 +3,13 @@
   <div class="form-body">
     <%= form.text_area :content, class:"form-area" %>
   </div>
-  <div class="form-submit">
-    <%= form.submit "投稿" %>
-  </div>
-  <div class = "form-date">
-    <%= form.date_field :due_date, type: "datetime-local" %>
+  <div class = "form-box">
+    <div class = "form-date">
+      <%= form.date_field :due_date, type: "datetime-local" %>
+    </div>
+    <div class="form-submit">
+      <%= form.submit "投稿" %>
+    </div>
   </div>
 <% end %>
 

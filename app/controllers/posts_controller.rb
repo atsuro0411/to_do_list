@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-   def index
-    @posts = Post.where(is_completed: false)
+  def index
+    @posts = Post.where(is_completed: false).order(:due_date).group_by{ |post| post.due_date.to_date }
   end
 
   def new

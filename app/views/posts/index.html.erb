@@ -1,17 +1,21 @@
 <h2> タスク一覧</h2>
+ 
   <%= link_to "新規投稿", new_post_path ,class: "new_link" %>
   <%= link_to "実行済み一覧", completed_index_posts_path %>
-    <% @posts.each do |post| %>
-      <div class="posts-index-item">
-        <div class="post-content">
-          <%= link_to(post.content, post_path(post.id)) %>
-        </div>
-          締切期限 <%= post.due_date.strftime("%Y/%m/%d %H:%M") %>
-          
-          <% unless post.is_completed %>
-            <%= button_to "実行済み", mark_post_path(post, is_completed: "true"), method: :patch %>
-          <% end %> 
-        </div>
-      </div>
+    <% @posts.each do |due_date, posts| %>
+      <h2><%= due_date.strftime("%Y年%m月%d日") %></h2>
+        <ul>
+          <% posts.each do |post| %>
+            <li class="posts-index-item">
+              <div class="post-content">
+                <%= link_to(post.content, post_path(post.id)) %>
+              </div>
+                締切期限 <%= post.due_date.strftime("%Y/%m/%d %H:%M") %>
+                <% unless post.is_completed %>
+                  <%= button_to "実行済み", mark_post_path(post, is_completed: "true"), method: :patch %>
+                <% end %>
+            </li>
+          <% end %>
+        </ul>
     <% end %>
   

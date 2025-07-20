@@ -1,0 +1,5 @@
+ja:
+  time:
+    formats:
+      default: "%-m/%-d"
+      deadline: "%H:%M"

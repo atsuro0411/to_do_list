@@ -67,3 +67,4 @@ gem "pry-rails"
 gem "dotenv-rails"
 
 gem "devise"
+gem "rails-i18n"

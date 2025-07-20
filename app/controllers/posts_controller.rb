@@ -34,21 +34,17 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
-  def post_params
-    params.require(:post).permit(:content, :id)
-  end
-
   def completed_index
     @posts = Post.where(is_completed: true)
   end
 
- def mark
-  post = Post.find(params[:id])
-  post.update(is_completed: params[:is_completed] == "true")
-  redirect_to posts_path
-end
+  def mark
+    post = Post.find(params[:id])
+    post.update(is_completed: !post.is_completed)
+    redirect_to posts_path
+  end
 
-def post_params
-  params.require(:post).permit(:content, :due_date)
-end
+  def post_params
+    params.require(:post).permit(:content, :due_date, :id)
+  end
 end

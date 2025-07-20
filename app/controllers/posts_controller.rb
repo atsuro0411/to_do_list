@@ -45,6 +45,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:content, :due_date,:id)
+    params.require(:post).permit(:content, :due_date, :id)
   end
 end

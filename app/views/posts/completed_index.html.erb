@@ -6,7 +6,7 @@
       <%= post.content %>
     </div>
       <% if post.is_completed %>
-        <%= button_to "実行済みを解除する", mark_post_path(post,is_completed: "false"), method: :patch %>
+        <%= button_to "実行済みを解除する", mark_post_path(post), method: :patch %>
       <% end %>
     </div>
 <% end %>

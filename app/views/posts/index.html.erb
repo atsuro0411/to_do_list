@@ -2,16 +2,16 @@
   <%= link_to "新規投稿", new_post_path ,class: "new_link" %>
   <%= link_to "実行済み一覧", completed_index_posts_path %>
     <% @posts.each do |due_date, posts| %>
-      <h2><%= due_date.strftime("%Y年%m月%d日") %></h2>
+      <h2><%= l due_date %></h2>
         <ul>
           <% posts.each do |post| %>
             <li class="posts-index-item">
               <div class="post-content">
                 <%= link_to(post.content, post_path(post.id)) %>
               </div>
-              締切期限 <%= post.due_date.strftime("%Y/%m/%d %H:%M") %>
+              締切期限 <%= l(post.due_date )%>
                 <% unless post.is_completed %>
-                  <%= button_to "実行済み", mark_post_path(post, is_completed: "true"), method: :patch %>
+                  <%= button_to "実行済み", mark_post_path(post), method: :patch %>
                 <% end %>
             </li>
           <% end %>

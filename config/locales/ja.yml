@@ -1,5 +1,7 @@
 ja:
+  date:
+    formats:
+      default: "%-m月%-d日"
   time:
     formats:
-      default: "%-m/%-d"
-      deadline: "%H:%M"
+      default: "%H:%M"

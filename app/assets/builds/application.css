@@ -1,80 +1,112 @@
-.form-heading {
+.posts-new .form-heading {
   color: black;
   font-size: 30px;
   text-align: center;
 }
-
-.form-body {
+.posts-new .form-body {
   text-align: center;
 }
-
-.form-area {
+.posts-new .form-area {
   width: 400px;
   height: 100px;
 }
-
-.form-box {
+.posts-new .form-box {
   display: flex;
   width: 400px;
   margin: 0 auto;
 }
-.form-box .form-submit {
+.posts-new .form-box .form-submit {
   width: 203px;
   text-align: right;
 }
-.form-box .form-date {
+.posts-new .form-box .form-date {
   width: 203px;
   text-align: left;
 }
 
-.new_link {
+.posts-index h2.section-title {
+  text-align: center;
+}
+.posts-index .new_link {
   text-decoration: none;
   color: black;
 }
-
-.posts-top {
+.posts-index .to_do_link {
+  text-decoration: none;
+  color: red;
+}
+.posts-index .posts-top {
   width: 900px;
   margin: 0 auto;
   border: 1px solid;
   margin-bottom: 20px;
 }
-.posts-top h2 {
+.posts-index .posts-top h2 {
   text-align: center;
 }
-.posts-top .posts-index-item {
+.posts-index .posts-top .posts-index-item {
   width: 800px;
   display: flex;
   margin: 0 auto;
   align-items: center;
   margin-bottom: 20px;
 }
-.posts-top .posts-index-item .post-content {
+.posts-index .posts-top .posts-index-item .post-content {
   width: 400px;
   padding: 5px;
   text-align: center;
   border: solid 1px;
   margin-right: 20px;
 }
-.posts-top .posts-index-item .posts-due-date {
+.posts-index .posts-top .posts-index-item .posts-due-date {
   margin-right: 20px;
 }
-.posts-top .posts-index-item .posts-button {
+.posts-index .posts-top .posts-index-item .posts-button {
   width: 180px;
   text-align: center;
 }
 
-.completed-posts-index-item {
+.posts-today h2.section-title {
+  text-align: center;
+}
+.posts-today .new_link {
+  text-decoration: none;
+  color: black;
+}
+.posts-today .to_do_link {
+  text-decoration: none;
+  color: blue;
+}
+.posts-today .posts-top {
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+.posts-today .posts-top h2 {
+  text-align: center;
+}
+.posts-today .posts-top .posts-index-item {
+  width: 800px;
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   align-items: center;
   margin-bottom: 20px;
-  gap: 20px;
+  margin-top: 20px;
 }
-.completed-posts-index-item .completed-post-conetent {
+.posts-today .posts-top .posts-index-item .post-content {
   width: 400px;
   padding: 5px;
   text-align: center;
   border: solid 1px;
+  margin-right: 20px;
+}
+.posts-today .posts-top .posts-index-item .posts-due-date {
+  margin-right: 20px;
+}
+.posts-today .posts-top .posts-index-item .posts-button {
+  width: 180px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=application.css.map */

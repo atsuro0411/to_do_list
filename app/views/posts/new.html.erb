@@ -1,15 +1,16 @@
-<h1 class="form-heading">投稿する</h1>
-<%= form_with model: @post do |form| %>
-  <div class="form-body">
-    <%= form.text_area :content, class:"form-area" %>
-  </div>
-  <div class = "form-box">
-    <div class = "form-date">
-      <%= form.date_field :due_date, type: "datetime-local" %>
+<div class = "posts-new">
+  <h1 class="form-heading">投稿する</h1>
+  <%= form_with model: @post do |form| %>
+    <div class="form-body">
+      <%= form.text_area :content, class:"form-area" %>
     </div>
-    <div class="form-submit">
-      <%= form.submit "投稿" %>
+    <div class = "form-box">
+      <div class = "form-date">
+        <%= form.date_field :due_date, type: "datetime-local" %>
+      </div>
+      <div class="form-submit">
+        <%= form.submit "投稿" %>
+      </div>
     </div>
-  </div>
-<% end %>
-
+  <% end %>
+</div>

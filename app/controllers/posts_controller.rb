@@ -3,6 +3,10 @@ class PostsController < ApplicationController
     @posts = Post.all.order(:due_date).group_by { |post| post.due_date.to_date }
   end
 
+  def today
+    @posts = Post.where(due_date: Date.today.all_day)
+  end
+
   def new
     @post = Post.new
   end
@@ -32,10 +36,6 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @post.destroy
     redirect_to posts_path
-  end
-
-  def completed_index
-    @posts = Post.where(is_completed: true)
   end
 
   def mark

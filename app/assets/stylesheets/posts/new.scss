@@ -1,26 +1,28 @@
-.form-heading{
-  color:black;
-  font-size:30px;
-  text-align:center;
-}
-.form-body{
-  text-align:center;
-}
-.form-area {
-  width:400px;
-  height:100px;
-}
-
-.form-box{
-  display:flex;
-  width:400px;
-  margin:0 auto;
-  .form-submit {
-  width:203px;
-  text-align:right;
+.posts-new{
+  .form-heading{
+    color:black;
+    font-size:30px;
+    text-align:center;
   }
+  .form-body{
+    text-align:center;
+  }
+  .form-area {
+    width:400px;
+    height:100px;
+  }
+
+  .form-box{
+    display:flex;
+    width:400px;
+    margin:0 auto;
+    .form-submit {
+    width:203px;
+    text-align:right;
+    }
     .form-date{
     width:203px;
     text-align: left;
     }
+  }
 }

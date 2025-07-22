@@ -1,12 +1,12 @@
-<h2>実行済み投稿一覧</h2>
-<%= link_to "タスク一覧", posts_path%>
-<% @posts.each do |post| %>
-  <div class="completed-posts-index-item">
-    <div class = "completed-post-conetent">
-      <%= post.content %>
-    </div>
-      <% if post.is_completed %>
-        <%= button_to "実行済みを解除する", mark_post_path(post), method: :patch %>
-      <% end %>
-    </div>
-<% end %>
+<%# <h2>実行済み投稿一覧</h2> %>
+<%# <%= link_to "タスク一覧", posts_path%>
+<%# @posts.each do |post| %>
+<%#   <div class="completed-posts-index-item"> %>
+<%#     <div class = "completed-post-conetent"> %>
+<%#       <%= post.content %>
+<%#     </div> %>
+<%#     <% if post.is_completed %>
+<%#       <%= button_to "実行済みを解除する", mark_post_path(post), method: :patch %>
+<%#     <% end %>
+<%#   </div> %>
+<%# end %>

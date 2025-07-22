@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.where(is_completed: false).order(:due_date).group_by { |post| post.due_date.to_date }
+    @posts = Post.all.order(:due_date).group_by { |post| post.due_date.to_date }
   end
 
   def new
@@ -43,6 +43,7 @@ class PostsController < ApplicationController
     post.update(is_completed: !post.is_completed)
     redirect_to posts_path
   end
+
 
   def post_params
     params.require(:post).permit(:content, :due_date, :id)

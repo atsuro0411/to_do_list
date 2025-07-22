@@ -27,27 +27,40 @@
   text-align: left;
 }
 
-h2 {
-  text-align: center;
-}
-
 .new_link {
   text-decoration: none;
   color: black;
 }
 
-.posts-index-item {
+.posts-top {
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+.posts-top h2 {
+  text-align: center;
+}
+.posts-top .posts-index-item {
+  width: 800px;
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   align-items: center;
   margin-bottom: 20px;
-  gap: 20px;
 }
-.posts-index-item .post-content {
+.posts-top .posts-index-item .post-content {
   width: 400px;
   padding: 5px;
   text-align: center;
   border: solid 1px;
+  margin-right: 20px;
+}
+.posts-top .posts-index-item .posts-due-date {
+  margin-right: 20px;
+}
+.posts-top .posts-index-item .posts-button {
+  width: 180px;
+  text-align: center;
 }
 
 .completed-posts-index-item {

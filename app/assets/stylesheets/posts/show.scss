@@ -1,0 +1,30 @@
+.posts-show{
+  .posts-show-item{
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  border: solid 1px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  }
+  .post-menus{
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .post-edit{
+      width: 200px;
+      text-align: left;
+      text-decoration: none;
+      color: blue;
+    }
+    .post-delete{
+      width: 200px;
+      text-align: right;
+      text-decoration: none;
+      color: red
+    }
+
+  }
+}

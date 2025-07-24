@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .posts-new .form-heading {
   color: black;
   font-size: 30px;
@@ -9,6 +10,9 @@
 .posts-new .form-area {
   width: 400px;
   height: 100px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: 　border-box;
 }
 .posts-new .form-box {
   display: flex;
@@ -58,6 +62,15 @@
   border: solid 1px;
   margin-right: 20px;
 }
+.posts-index .posts-top .posts-index-item .post-content .task.completed {
+  opacity: 0.2;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+.posts-index .posts-top .posts-index-item .post-content .post_link {
+  text-decoration: none;
+  color: black;
+}
 .posts-index .posts-top .posts-index-item .posts-due-date {
   margin-right: 20px;
 }
@@ -100,6 +113,16 @@
   text-align: center;
   border: solid 1px;
   margin-right: 20px;
+}
+.posts-today .posts-top .posts-index-item .post-content .task.completed {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  color: black;
+  opacity: 0.3;
+}
+.posts-today .posts-top .posts-index-item .post-content .post_link {
+  text-decoration: none;
+  color: black;
 }
 .posts-today .posts-top .posts-index-item .posts-due-date {
   margin-right: 20px;

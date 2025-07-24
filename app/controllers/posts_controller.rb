@@ -41,9 +41,8 @@ class PostsController < ApplicationController
   def mark
     post = Post.find(params[:id])
     post.update(is_completed: !post.is_completed)
-    redirect_to posts_path
+    redirect_back fallback_location: posts_path
   end
-
 
   def post_params
     params.require(:post).permit(:content, :due_date, :id)

@@ -31,6 +31,15 @@
         text-align: center;
         border: solid 1px;
         margin-right: 20px;
+        .task.completed {
+          opacity: 0.2;
+          text-decoration: line-through;
+          text-decoration-thickness: 2px;
+        }
+        .post_link{
+          text-decoration: none;
+          color:black;
+        }
       }
       .posts-due-date{
         margin-right: 20px;

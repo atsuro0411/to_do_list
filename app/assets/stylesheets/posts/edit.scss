@@ -1,0 +1,23 @@
+.posts-edit{
+  .form-heading{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  .form-body{
+    text-align: center;
+    .form-area {
+      width: 400px;
+      height: 100px;
+      font-size: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+  }
+  .form-submit {
+    width: 400px;
+    text-align: right;
+    margin: 0 auto;
+  }
+}

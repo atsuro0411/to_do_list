@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .posts-new .form-heading {
   color: black;
   font-size: 30px;
@@ -12,7 +11,7 @@
   height: 100px;
   font-size: 20px;
   padding: 10px;
-  box-sizing: 　border-box;
+  box-sizing: border-box;
 }
 .posts-new .form-box {
   display: flex;
@@ -130,6 +129,28 @@
 .posts-today .posts-top .posts-index-item .posts-button {
   width: 180px;
   text-align: center;
+}
+
+.posts-edit .form-heading {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+.posts-edit .form-body {
+  text-align: center;
+}
+.posts-edit .form-body .form-area {
+  width: 400px;
+  height: 100px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.posts-edit .form-submit {
+  width: 400px;
+  text-align: right;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=application.css.map */

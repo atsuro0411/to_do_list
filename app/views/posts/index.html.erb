@@ -1,7 +1,5 @@
 <div class = "posts-index">  
   <h2 class="section-title"> タスク一覧</h2>
-  <%= link_to "新規投稿", new_post_path ,class: "new_link" %>
-  <%= link_to "今日のタスク", today_posts_path ,class: "to_do_link" %>
   <% @posts.each do |due_date, posts| %>
     <div class = "posts-top">
       <h2><%= l due_date %></h2>

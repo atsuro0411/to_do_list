@@ -181,4 +181,34 @@
   color: red;
 }
 
+.posts-header .header-label {
+  background-color: #ccffff;
+  height: 50px;
+  padding: 10px;
+}
+.posts-header .header-label .new_link {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 20px;
+  line-height: 50px;
+}
+.posts-header .header-label .index-link {
+  text-decoration: none;
+  color: #0066cc;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.posts-header .header-label .to_do_link {
+  text-decoration: none;
+  color: #0066cc;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.posts-header .header-label .logout {
+  text-decoration: none;
+  color: #0066cc;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=application.css.map */

@@ -1,7 +1,5 @@
 <div class = "posts-today">
   <h2 class="section-title"> 今日のタスク一覧</h2>
-  <%= link_to "新規投稿", new_post_path ,class: "new_link" %>
-  <%= link_to "タスク一覧", posts_path ,class: "to_do_link" %>
   <% @posts.each do |post| %>
     <div class = "posts-top">
       <% unless post.is_completed %>
